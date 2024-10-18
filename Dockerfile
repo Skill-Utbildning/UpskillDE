@@ -1,4 +1,4 @@
-FROM pandas/pandas_dev
+FROM python:3.10.15-slim
 
 COPY requirements.txt /opt/app/requirements.txt
 WORKDIR /opt/app
