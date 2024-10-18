@@ -1,4 +1,6 @@
 FROM python:3.10.15-slim
+RUN apt update
+RUN apt install -y git
 
 COPY requirements.txt /opt/app/requirements.txt
 WORKDIR /opt/app
